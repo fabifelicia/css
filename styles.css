@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+  color: #fff;
+}
+
+body {
+  height: 100vh;
+  background: url("./assets/background.png") no-repeat center center fixed;
+  background-size: cover;
+  background-color: #000;
+}
+
+header {
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 10px;  
+  border-bottom: 5px ridge #307fe2;
+  margin-bottom: 5rem;
+}
+header img {
+  width: 7%;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  padding: 10px;
+  /* border-bottom: 1px dashed #fff; */
+}
+
+header ul li a {
+  transition: 300ms;
+}
+
+header ul li a:hover {
+  color: #307fe2;
+  text-decoration: underline;
+}
+
+.container {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container .name h1 {
+  font-size: 3.75rem;
+}
+
+.container .name h5 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#arrow {
+    font-size: 2rem;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about {
+    display: none;
+}
+
+#about p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 1.8rem;
+  border: thick double #307fe2;
+  padding: 1rem;
+}
+
+.form div p {
+    margin-bottom: 20px;
+}
+
+.form input {
+  width: 50%;
+  padding: 6px 10px;
+  border-radius: 15px 0 0 15px;  
+  margin-right: -5px;
+  border: none;
+  
+}
+
+.form button {
+  width: 20%;
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #307fe2;
+  font-weight: 700;
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 0 15px 15px 0;  
+  transition: 300ms;
+}
+
+.form button:hover {
+    background-color: #fff;
+}
+
+input::placeholder
+ {
+  color: #307fe2;  
+}
+
+@media only screen and (max-width: 810px) {
+    .form {
+        width: 80%;        
+    }
+
+     
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 1.875rem;
+    }
+
+    .container .name h5 {
+        font-size: 1rem;        
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+}
