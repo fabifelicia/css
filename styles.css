@@ -80,6 +80,18 @@ a {
     }
 }
 
+i {
+    color: #307fe2; 
+    background-color: #fff; 
+    width: 32px; 
+    border-radius:50%
+}
+
+i:hover {
+    color: #000;
+    background-color: #307fe2;
+}
+
 #animation {
     transition: 300ms;
 }
